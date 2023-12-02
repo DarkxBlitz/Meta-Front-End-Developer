@@ -1,0 +1,73 @@
+Using the spread operator, it's easy to concatenate arrays:
+const fruits = ['apple', 'pear', 'plum']
+const berries = ['blueberry', 'strawberry']
+const fruitsAndBerries = [...fruits, ...berries] // concatenate
+console.log(fruitsAndBerries); // outputs a single array
+
+It's also easy to join objects:  
+const flying = { wings: 2 }
+const car = { wheels: 4 }
+const flyingCar = {...flying, ...car}
+console.log(flyingCar) // {wings: 2, wheels: 4}
+
+Add new members to arrays without using the push() method
+let veggies = ['onion', 'parsley'];
+veggies = [...veggies, 'carrot', 'beetroot'];
+console.log(veggies);
+
+Convert a string to an array using the spread operator
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
+
+Copy either an object or an array into a separate one
+const car1 = {
+    speed: 200,
+    color: 'yellow'
+}
+const car 2 = {...car1}
+
+car1.speed = 201
+
+console.log(car1.speed, car2.speed)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SPREAD OPERATOR
+Imagine your given a function like so:
+
+function showItienrary(place1, place2, place3){
+    console.log("visit" +palce1);
+    console.log("then visit" +place2);
+    console.log("lastly, visit" + place3);
+}
+
+spread operator can be used like so:
+
+showItinerary(...top7);
+
+those 3 dots are the spread operator.
+
+REST OPERATOR
+
+has to be the last parameter when passed
+
+Example:
+function addTaxToPrices(taxRate, ...itemsBought){
+    return itemsBought.map(item => taxRate * item)
+}
+
+let shoppingCart = addTaxToPrices(1.1, 46, 89, 35, 79);
+console.log(shoppingCart); //[50.6, 97.9, 38.5, 86.9]

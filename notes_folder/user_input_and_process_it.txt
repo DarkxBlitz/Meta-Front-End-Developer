@@ -1,0 +1,18 @@
+Use  HTML forms
+You can code a script which will take an input from an HTML form and display the text that a user types in on the screen.
+
+var h1 = document.createElement('h1')
+h1.innerText = "Type into the input to make this text change"
+
+var input = document.createElement('input')
+input.setAttribute('type', 'text')
+
+document.body.innerText = '';
+document.body.appendChild(h1);
+document.body.appendChild(input);
+
+input.addEventListener('change', function() {
+    h1.innerText = input.value
+})
+
+ you're dynamically adding the input element, and you're setting its HTML type attribute to text. That way, when you start typing into it, the letters will be showing in the h1 element above.
