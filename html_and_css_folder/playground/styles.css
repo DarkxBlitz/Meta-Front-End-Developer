@@ -1,0 +1,142 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+       background-color: #e9efeb;
+    font-family:'Markazi Text', serif;
+    margin-top:3rem;
+    margin-bottom:3rem;
+    margin-left:5%;
+    margin-right:5%;
+}
+.principal-section article div{
+ background-image: url(/img/foodimage6.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    border-radius: 4%;
+    height:auto;
+  
+}
+.principal-section div p{
+    margin:5px;
+    color:whitesmoke;
+    text-align: justify;
+    font-size: small;
+}
+.secondary-section{
+    width:auto;
+
+}
+.secondary-section div{
+    
+    background-color:beige;
+    border-radius: 4%;
+    margin:3px;
+    height:100%;
+    width:auto;
+}
+.secondary-section div p{
+    margin:5px;
+}
+.secondary-section div img{
+    border-radius: 8%;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+  /*  height: 190px;    
+    width: 190px;*/
+    width: auto;
+    height: 10rem;
+    padding-bottom: 8%;
+
+
+}
+h1{
+    font-size:2.3rem;
+    margin:15px;
+    color:navy;
+
+}
+h2{
+    font-size:1.8rem;
+    text-align: center;
+    padding:8%;
+}
+.header-logo{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:5%;
+    object-fit: cover;
+    width: 85%;
+    height: 80%;
+}
+.flex-container{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+
+     background-color:#2b2d42;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:stretch;
+    border-radius: 2%;
+}
+nav li{
+     list-style-type:none;
+
+}
+.flex-container a{
+    display:inline-block;
+    padding:25px;
+    margin:0 25px;
+    text-decoration:none;
+    color:#ffffff;
+    text-align:center;
+}
+.flex-container a:hover{
+        color:#2b2d42;
+    background-color: beige;
+}
+
+section{
+    display:flex;
+    margin-top:0.7rem;
+    margin-bottom:0.5rem;
+}
+article{
+    flex:1;
+}
+#hours{
+    text-align: center;
+}
+footer{
+    display:flex;
+    padding-top:5%;
+}
+footer div{
+    display:flex;
+    flex:3;
+    align-items: center;
+    justify-content: center;;
+}
+
+.footer-logo img{
+    border:0;
+    display: block;
+    margin-right:auto;
+    width: 15%;
+    height: 40%;
+}
+#Copyright {
+    padding-top: 3px;
+    border-top:solid #2b2d42;
+    font-size: 0.1em;
+    text-align:right;
+}
