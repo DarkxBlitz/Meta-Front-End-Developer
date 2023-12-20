@@ -1,0 +1,7 @@
+1)npm init react-app [name of app goes here or use . to default the name to "app"]
+
+2)Look for package-lock.json and type "npm start"
+Note: localhost:3000 lists the directory you're working in and you have to use the other ip address given
+such as : 192.168.1.130:3000
+to view your react app.
+
